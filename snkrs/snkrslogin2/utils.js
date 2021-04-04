@@ -1,0 +1,48 @@
+module.exports = {
+    'getRandom': function (minMs, maxMs) {
+        const subMs = maxMs - minMs;
+        return minMs + Math.floor(Math.random() * subMs);
+    },
+    'PURCHASE_RETURNS': {
+        'NO_ERROR': 0,
+        'SUCCESS_LOGIN': 1,
+        'ERROR_LOGIN': 2,
+        'FAILED': 3,
+        'SUCCESS': 4,
+        'ERROR_INVALID_ADDRESS': 5,
+        'ERROR_ADDING_CC': 6,
+        'INVALID_PAN': 7,
+        'CREDITCARD_ISSUE': 8,
+        'ERROR_CVV_REQUIRED': 9,
+        'PAYMENT_ERROR_500': 10,
+        'INVALID_LOGIN_TOKEN': 11,
+        'PRODUCT_NOT_FOUND': 12,
+        'SLOW_PROXIES': 13,
+        'BAD_PROXY': 14,
+        'NAVIGATION_ERROR': 15,
+        'ERROR_GENERATE_CHECKOUT': 16,
+        'ERROR_PARSING': 17,
+        'NO_PHONE_NUMBER': 18,
+        'ERROR_RETRIEVING_USER_INFO': 19,
+        'NO_ENTRY_ID': 20,
+        'INVALID_SIZE': 21
+    },
+    'TASK_STATUS': {
+        'LOADING_PAGE': 'LOADING_PAGE',
+        'WAITING_CHECKOUT': 'WAITING_CHECKOUT',
+        'POSTING_LOGIN_SESSION': 'POSTING_LOGIN_SESSION',
+        'WAITING_IN_LINE': 'WAITING_IN_LINE',
+        'LOGGING_IN': 'LOGGING_IN',
+        'FETCHING_PRODUCT': 'FETCHING_PRODUCT',
+        'WAITING_SCHEDULE': 'WAITING_SCHEDULE',
+        'GENERATING_CHECKOUT_LINK': 'GENERATING_CHECKOUT_LINK',
+        'SUBMITTING_CHECKOUT': 'SUBMITTING_CHECKOUT',
+        'FILLING_CHECKOUT': 'FILLING_CHECKOUT',
+        'PROXY_ERROR': 'PROXY_ERROR',
+        'BROWSER_CRASH': 'BROWSER_CRASH',
+        'ADDING_ADDRESS_INFO': 'ADDING_ADDRESS_INFO',
+        'ADDING_CC_INFO': 'ADDING_CC_INFO',
+        'DELETING_PREVIOUS_CCS': 'DELETING_PREVIOUS_CCS',
+        'REFRESHING_LOGIN_TOKEN': 'REFRESHING_LOGIN_TOKEN',
+    }
+};
